@@ -1,0 +1,46 @@
+.wrapper {
+    border-right: 1px solid #2d2d2d;
+    height: 95%;
+    color: #fff;
+    position: fixed;
+    width: 30%;
+    left: 0;
+    top: 0;
+    padding: 2.5%;
+    background: #000;
+    overflow-y: scroll;
+
+    h2 {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+}
+
+.list li {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2d2d2d;
+    align-items: center;
+}
+
+.large {
+    font-size: 16px;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.closeBtn {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hide {
+    height: 0;
+    overflow: hidden;
+}

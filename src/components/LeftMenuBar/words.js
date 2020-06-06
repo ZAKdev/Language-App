@@ -1,0 +1,51 @@
+export default {
+    wh: [
+        "what",
+        "when",
+        "where",
+        "which",
+        "who",
+        "whose",
+        "why",
+        "why don't",
+        "how",
+        "how far",
+        "how long",
+        "how many",
+        "how much",
+        "how old",
+        "how come"
+    ],
+    subjects: [
+        "I",
+        "me",
+        "he",
+        "she",
+        "it",
+        "him",
+        "her",
+        "they",
+        "them",
+        "we",
+        "us"
+    ],
+    others: [
+        "in",
+        "to",
+        "for",
+        "have",
+        "had",
+        "has",
+        "can",
+        "can not",
+        "could",
+        "could not",
+        "should",
+        "should not",
+        "should have",
+        "right",
+        "left",
+        "up",
+        "down"
+    ]
+};

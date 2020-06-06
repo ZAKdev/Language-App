@@ -1,0 +1,45 @@
+.wrapper {
+    color: #fff;
+    position: relative;
+}
+
+.selectedLang {
+    font-size: 14px;
+    display: flex;
+    width: 70px;
+    justify-content: space-between;
+    border: 1px solid #2d2d2d;
+    padding: 10px;
+    cursor: pointer;
+
+    i {
+        font-size: 16px;
+    }
+}
+
+.langList {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 150%;
+    height: 200px;
+    overflow-y: scroll;
+    z-index: 1;
+    background: #ddd;
+    color: #000;
+
+    li {
+        list-style: none;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+        transition: all ease 0.2s;
+        font-size: 12px;
+
+        &:hover {
+            background: #2d2d2d;
+            color: #ddd;
+        }
+    }
+}

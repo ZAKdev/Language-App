@@ -1,0 +1,25 @@
+.wrapper {
+    padding: 5%;
+    position: absolute;
+    width: 60%;
+    left: 15%;
+    top: 30%;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.closeIcon {
+    cursor: pointer;
+    background: #fff;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
