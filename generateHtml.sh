@@ -1,4 +1,4 @@
 cp -v index.html dist/index.html
-cp -R css dist/css/
-cp -R webfonts dist/webfonts/
-cp -R icons dist/icons/
+cp -R css dist/
+cp -R webfonts dist/
+cp -R icons dist/
