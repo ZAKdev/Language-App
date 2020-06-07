@@ -4,6 +4,9 @@ import classes from './listItems.scss';
 const ListItems = props => {
     return (
         <div className={classes.wrapper}>
+            {props.checkHandler &&
+                <h3 className={classes.title}>Select vocabs for new tabs</h3>
+            }
             <ul>
                 {props.items.map((item, index) => {
                     const checked = !!item.checked;
@@ -33,7 +36,7 @@ const ListItems = props => {
                 })}
             </ul>
             {props.items.length === 0 &&
-                <div className={classes.message}>Click on Add to add words and sentences</div>
+                <div className={classes.message}>Click on plus to add words and sentences</div>
             }
         </div>
     );

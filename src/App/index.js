@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import classes from './app.scss';
 import {
     HashRouter as Router,
@@ -48,9 +48,10 @@ const App = () => {
                 {isAddFormVisible &&
                     <Popup onClose={() => setIsAddFormVisible(false)}>
                         <AddItemForm
-                            onSubmitHandler={(data, setError) =>
-                                addItemToList(data, itemList, setItemList, setError)
-                            }
+                            onSubmitHandler={(data, setError) => {
+                                addItemToList(data, itemList, setItemList, setError);
+                                setIsAddFormVisible(false);
+                            }}
                         />
                     </Popup>
                 }

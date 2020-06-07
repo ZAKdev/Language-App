@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import classes from './addItemForm.scss';
+import { useHistory } from "react-router-dom";
 
 const validateForm = (inputRef, textareaRef) => {
     if (inputRef.value === '' && textareaRef.value === '') {
@@ -18,6 +19,7 @@ const AddItemForm = props => {
         isError: false,
         message: ''
     });
+    let history = useHistory();
     return (
         <div className={classes.wrapper}>
             {error.isError &&
@@ -36,6 +38,7 @@ const AddItemForm = props => {
                     const data = validateForm(inputRef.current, textareaRef.current);
                     if (data) {
                         props.onSubmitHandler(data, setError)
+                        history.push('/managelist');
                     } else {
                         setError({
                             isError: true,
